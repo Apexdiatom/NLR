@@ -19,7 +19,6 @@ app.use(session({
 app.use(express.static('public'));
 
 // Serve the sign-in page at the root
-const path = require('path');
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'login.html'));
 });
